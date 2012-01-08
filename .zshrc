@@ -46,4 +46,5 @@ export AWS_IAM_HOME="/usr/local/Cellar/aws-iam-tools/HEAD/jars"
 
 alias vup="pushd ~/Vagrant && vagrant up && vagrant ssh; popd"
 alias vdown="pushd ~/Vagrant && vagrant suspend && popd"
+alias vstart="pushd ~/Vagrant && vagrant reload && popd"
 
