@@ -45,7 +45,7 @@ export AWS_CREDENTIAL_FILE="/Users/bsedat/.AWS-Credentials"
 export EC2_PRIVATE_KEY="$(/bin/ls $HOME/.ec2/pk-*.pem)"
 export EC2_CERT="$(/bin/ls $HOME/.ec2/cert-*.pem)"
 export JAVA_HOME="/System/Library/Frameworks/JavaVM.framework/Home"
-export EC2_HOME="/usr/local/Cellar/ec2-api-tools/1.5.2.3/jars"
+export EC2_HOME="/usr/local/Cellar/ec2-api-tools/1.5.2.4/jars"
 export AWS_ELB_HOME="/usr/local/Cellar/elb-tools/1.0.15.1/jars"
 export AWS_IAM_HOME="/usr/local/Cellar/aws-iam-tools/HEAD/jars"
 # Export AWS Credentials to get AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY 
