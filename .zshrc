@@ -50,6 +50,7 @@ export AWS_ELB_HOME="/usr/local/Cellar/elb-tools/1.0.15.1/jars"
 export AWS_IAM_HOME="/usr/local/Cellar/aws-iam-tools/HEAD/jars"
 export AWS_CLOUDWATCH_HOME="/usr/local/Cellar/cloud-watch/1.0.12.1/jars"
 export SERVICE_HOME="$AWS_CLOUDWATCH_HOME"
+export AWS_AUTO_SCALING_HOME="/usr/local/Cellar/auto-scaling/1.0.49.1/jars"
 # Export AWS Credentials to get AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY 
 source $HOME/.AWS-Credentials-Export
 
