@@ -20,3 +20,4 @@
 .zcompdump
 .zsh-update
 .zshrc.pre-oh-my-zsh
+.netrc
