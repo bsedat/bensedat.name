@@ -58,3 +58,5 @@ alias vup="pushd ~/Vagrant && vagrant up && vagrant ssh; popd"
 alias vdown="pushd ~/Vagrant && vagrant suspend && popd"
 alias vstart="pushd ~/Vagrant && vagrant reload && vagrant ssh && popd"
 
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
