@@ -38,7 +38,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 # export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin
-export PATH=/usr/local/bin:/opt/local/bin:/opt/local/sbin:$PATH
+export PATH=~/bin:/usr/local/bin:/opt/local/bin:/opt/local/sbin:$PATH
 
 # AWS Command-Line Tools
 export AWS_CREDENTIAL_FILE="/Users/bsedat/.AWS-Credentials"
