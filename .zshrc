@@ -32,7 +32,7 @@ COMPLETION_WAITING_DOTS="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git macports brew osx vagrant textmate heroku rvm gem python pip bundler git-flow)
+plugins=(git macports brew osx vagrant textmate heroku rvm gem python pip bundler git-flow npm node)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -58,5 +58,5 @@ alias vup="pushd ~/Vagrant && vagrant up && vagrant ssh; popd"
 alias vdown="pushd ~/Vagrant && vagrant suspend && popd"
 alias vstart="pushd ~/Vagrant && vagrant reload && vagrant ssh && popd"
 
-
+NODE_PATH=/usr/local/lib/node_modules
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
