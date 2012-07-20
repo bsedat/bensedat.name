@@ -1,3 +1,6 @@
+# Customize to your needs...
+export PATH=~/bin:/opt/local/bin:/opt/local/sbin:$PATH
+
 # VirtualEnvWrapper
 source /usr/local/bin/virtualenvwrapper.sh
 [[ -e "$HOME/.virtualenvs/work" ]] && workon work
@@ -35,10 +38,6 @@ COMPLETION_WAITING_DOTS="true"
 plugins=(git macports brew osx vagrant textmate heroku rvm gem python pip bundler git-flow npm node python virtualenvwrapper)
 
 source $ZSH/oh-my-zsh.sh
-
-# Customize to your needs...
-# export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin
-export PATH=~/bin:/usr/local/bin:/opt/local/bin:/opt/local/sbin:$PATH
 
 # AWS Command-Line Tools
 export AWS_CREDENTIAL_FILE="/Users/bsedat/.AWS-Credentials"
