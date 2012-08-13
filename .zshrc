@@ -1,5 +1,6 @@
 # Customize to your needs...
-export PATH=~/bin:/opt/local/bin:/opt/local/sbin:$PATH
+# MacPorts lives on /opt/local, but causes problems
+export PATH=~/bin:/usr/local/bin:$PATH:/opt/local/bin:/opt/local/sbin
 
 # VirtualEnvWrapper
 source /usr/local/bin/virtualenvwrapper.sh
