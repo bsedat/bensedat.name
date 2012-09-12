@@ -54,6 +54,8 @@ export AWS_AUTO_SCALING_HOME="/usr/local/Cellar/auto-scaling/1.0.49.1/jars"
 # Export AWS Credentials to get AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY 
 source $HOME/.AWS-Credentials-Export
 
+alias zresource='source ~/.zshrc'
+
 alias vup="pushd ~/Vagrant && vagrant up && vagrant ssh; popd"
 alias vdown="pushd ~/Vagrant && vagrant suspend && popd"
 alias vstart="pushd ~/Vagrant && vagrant reload && vagrant ssh && popd"
