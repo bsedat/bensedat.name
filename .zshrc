@@ -1,6 +1,6 @@
 # Customize to your needs...
 # MacPorts lives on /opt/local, but causes problems
-export PATH=~/bin:/usr/local/heroku/bin:/usr/local/bin:$PATH:/opt/local/bin:/opt/local/sbin
+export PATH=~/bin:/usr/local/share/npm/bin:/usr/local/bin:$PATH:/opt/local/bin:/opt/local/sbin
 
 # VirtualEnvWrapper
 source /usr/local/bin/virtualenvwrapper.sh
@@ -36,7 +36,7 @@ COMPLETION_WAITING_DOTS="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git github macports brew osx vagrant textmate heroku rvm gem python pip bundler git-flow npm node python virtualenvwrapper)
+plugins=(git github macports brew osx vagrant textmate heroku rvm gem python pip bundler git-flow npm node virtualenvwrapper)
 
 source $ZSH/oh-my-zsh.sh
 

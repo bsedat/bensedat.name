@@ -21,3 +21,5 @@
 .zsh-update
 .zshrc.pre-oh-my-zsh
 .netrc
+.trash
+.showoffrc
