@@ -40,6 +40,9 @@ plugins=(brew bundler gem git gitfast github git-flow heroku macports node npm o
 
 source $ZSH/oh-my-zsh.sh
 
+# Autojump
+[[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
+
 # AWS Command-Line Tools
 export AWS_CREDENTIAL_FILE="/Users/bsedat/.AWS-Credentials"
 export EC2_PRIVATE_KEY="$(/bin/ls $HOME/.ec2/pk-*.pem)"
@@ -59,6 +62,8 @@ alias zresource='source ~/.zshrc'
 alias vup="pushd ~/Vagrant && vagrant up && vagrant ssh; popd"
 alias vdown="pushd ~/Vagrant && vagrant suspend && popd"
 alias vstart="pushd ~/Vagrant && vagrant reload && vagrant ssh && popd"
+
+alias j="autojump"
 
 NODE_PATH=/usr/local/lib/node_modules
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
