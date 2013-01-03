@@ -2,10 +2,12 @@
 # MacPorts lives on /opt/local, but causes problems
 export PATH=~/bin:/usr/local/share/npm/bin:/usr/local/bin:$PATH:/opt/local/bin:/opt/local/sbin
 
+# Pythonbrew
+[[ -s "$HOME/.pythonbrew/etc/bashrc" ]] && source "$HOME/.pythonbrew/etc/bashrc"
 # VirtualEnvWrapper
-source /usr/local/bin/virtualenvwrapper.sh
-[[ -e "$HOME/.virtualenvs/work" ]] && workon work
+pythonbrew venv use global
 export VIRTUAL_ENV_DISABLE_PROMPT=1
+
 
 # Invoke RVM
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
