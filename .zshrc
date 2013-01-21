@@ -8,10 +8,6 @@ export PATH=~/bin:/usr/local/share/npm/bin:/usr/local/bin:$PATH:/opt/local/bin:/
 pythonbrew venv use global
 export VIRTUAL_ENV_DISABLE_PROMPT=1
 
-
-# Invoke RVM
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
-
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
