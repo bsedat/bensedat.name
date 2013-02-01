@@ -61,7 +61,11 @@ alias vup="pushd ~/Vagrant && vagrant up && vagrant ssh; popd"
 alias vdown="pushd ~/Vagrant && vagrant suspend && popd"
 alias vstart="pushd ~/Vagrant && vagrant reload && vagrant ssh && popd"
 
-alias j="autojump"
-
 NODE_PATH=/usr/local/lib/node_modules
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+if [ -f ~/.zsh_nocorrect ]; then
+    while read -r COMMAND; do
+        alias $COMMAND="nocorrect $COMMAND"
+    done < ~/.zsh_nocorrect
+fi
