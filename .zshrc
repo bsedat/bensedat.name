@@ -56,6 +56,7 @@ alias zresource='source ~/.zshrc'
 
 NODE_PATH=/usr/local/lib/node_modules
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+JAVA_HOME=$(/usr/libexec/java_home -v 1.7)
 
 if [ -f ~/.zsh_nocorrect ]; then
     while read -r COMMAND; do
