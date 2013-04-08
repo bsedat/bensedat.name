@@ -33,7 +33,26 @@ COMPLETION_WAITING_DOTS="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(brew bundler gem git gitfast github git-flow git-hubflow heroku macports node npm osx pip python rails3 rake rvm vagrant virtualenvwrapper)
+plugins=(
+	brew 
+	bundler 
+	gem 
+	git 
+	gitfast 
+	git-flow 
+	git-hubflow 
+	# github
+	heroku 
+	hub 
+	node 
+	npm 
+	osx 
+	pip 
+	python 
+	rails3 
+	rake 
+	rvm
+)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -51,14 +70,8 @@ export AWS_AUTO_SCALING_HOME="/usr/local/Cellar/auto-scaling/1.0.49.1/jars"
 # Export AWS Credentials to get AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY
 source $HOME/.AWS-Credentials-Export
 
-alias zresource='source ~/.zshrc'
-
 NODE_PATH=/usr/local/lib/node_modules
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 JAVA_HOME=$(/usr/libexec/java_home -v 1.7)
 
-if [ -f ~/.zsh_nocorrect ]; then
-    while read -r COMMAND; do
-        alias $COMMAND="nocorrect $COMMAND"
-    done < ~/.zsh_nocorrect
-fi
+eval "$(hub alias -s)"
