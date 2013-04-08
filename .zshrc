@@ -2,10 +2,10 @@
 export PATH=~/bin:/usr/local/share/npm/bin:/usr/local/bin:$PATH
 
 # Pythonbrew
+export VIRTUAL_ENV_DISABLE_PROMPT=1
 [[ -s "$HOME/.pythonbrew/etc/bashrc" ]] && source "$HOME/.pythonbrew/etc/bashrc"
 # VirtualEnvWrapper
 pythonbrew venv use global
-export VIRTUAL_ENV_DISABLE_PROMPT=1
 
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
