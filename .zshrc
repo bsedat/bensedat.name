@@ -60,7 +60,6 @@ source $ZSH/oh-my-zsh.sh
 export AWS_CREDENTIAL_FILE="/Users/bsedat/.AWS-Credentials"
 export EC2_PRIVATE_KEY="$(/bin/ls $HOME/.ec2/pk-*.pem)"
 export EC2_CERT="$(/bin/ls $HOME/.ec2/cert-*.pem)"
-export JAVA_HOME="/System/Library/Frameworks/JavaVM.framework/Home"
 export EC2_HOME="/usr/local/Library/LinkedKegs/ec2-api-tools/jars"
 export AWS_ELB_HOME="/usr/local/Library/LinkedKegs/elb-toolsjars"
 export AWS_IAM_HOME="/usr/local/Library/LinkedKegs/aws-iam-tools/jars"
