@@ -40,7 +40,7 @@ plugins=(
 	git 
 	gitfast 
 	git-flow 
-	git-hubflow 
+	# git-hubflow 
 	# github
 	heroku 
 	hub 
