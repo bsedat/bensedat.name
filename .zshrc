@@ -70,7 +70,8 @@ export AWS_AUTO_SCALING_HOME="/usr/local/Cellar/auto-scaling/1.0.49.1/jars"
 source $HOME/.AWS-Credentials-Export
 
 NODE_PATH=/usr/local/lib/node_modules
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 JAVA_HOME=$(/usr/libexec/java_home -v 1.7)
 
 eval "$(hub alias -s)"
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
