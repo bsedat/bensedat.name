@@ -29,7 +29,7 @@ COMPLETION_WAITING_DOTS="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(
 	brew 
-	bundler 
+	# bundler 
 	gem 
 	git 
 	gitfast 
