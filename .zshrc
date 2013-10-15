@@ -31,6 +31,7 @@ plugins=(
 	brew 
 	# bundler 
 	gem 
+	bsedat-git
 	git 
 	gitfast 
 	git-flow 
