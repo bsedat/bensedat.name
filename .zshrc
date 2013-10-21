@@ -66,6 +66,7 @@ source $HOME/.AWS-Credentials-Export
 
 NODE_PATH=/usr/local/lib/node_modules
 JAVA_HOME=$(/usr/libexec/java_home -v 1.7)
+ANDROID_HOME=/usr/local/opt/android-sdk
 
 eval "$(hub alias -s)"
 
