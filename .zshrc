@@ -44,7 +44,7 @@ plugins=(
 	osx 
 	pip 
 	python 
-	rails3 
+	rails 
 	rake 
 	rvm
 )
