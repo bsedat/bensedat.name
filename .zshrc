@@ -46,7 +46,8 @@ plugins=(
 	python 
 	rails 
 	rake 
-	rvm
+	rbenv
+	# rvm
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -69,5 +70,4 @@ export JAVA_HOME="$(/usr/libexec/java_home -v 1.7)"
 export ANDROID_HOME=/usr/local/opt/android-sdk
 
 eval "$(hub alias -s)"
-
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+eval "$(rbenv init -)"
