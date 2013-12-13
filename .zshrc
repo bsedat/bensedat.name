@@ -48,6 +48,7 @@ plugins=(
 	rake 
 	rbenv
 	# rvm
+	vagrant
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -71,3 +72,4 @@ export ANDROID_HOME=/usr/local/opt/android-sdk
 
 eval "$(hub alias -s)"
 eval "$(rbenv init -)"
+
