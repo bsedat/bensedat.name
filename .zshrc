@@ -35,6 +35,7 @@ plugins=(
 	git 
 	gitfast 
 	git-flow 
+	golang
 	# git-hubflow 
 	# github
 	heroku 
