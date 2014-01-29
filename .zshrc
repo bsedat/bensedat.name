@@ -36,10 +36,7 @@ plugins=(
 	gitfast 
 	git-flow 
 	golang
-	# git-hubflow 
-	# github
 	heroku 
-	hub 
 	node 
 	npm 
 	osx 
@@ -71,6 +68,5 @@ export NODE_PATH=/usr/local/lib/node_modules
 export JAVA_HOME="$(/usr/libexec/java_home -v 1.7)"
 export ANDROID_HOME=/usr/local/opt/android-sdk
 
-eval "$(hub alias -s)"
 eval "$(rbenv init -)"
 
