@@ -29,7 +29,6 @@ COMPLETION_WAITING_DOTS="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(
 	brew 
-	# bundler 
 	gem 
 	bsedat-git
 	git 
@@ -45,7 +44,6 @@ plugins=(
 	rails 
 	rake 
 	rbenv
-	# rvm
 	vagrant
 )
 
