@@ -1,10 +1,5 @@
 *
 !\.*
-#!\.*/*
-#.Trash
-#.cups
-#.dropbox
-#.fontconfig
 .DS_Store
 *history
 .AWS-Credentials
