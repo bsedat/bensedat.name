@@ -49,6 +49,8 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
+export EDITOR=vim
+
 source $HOME/.AWS-Credentials-Export
 
 export NODE_PATH=/usr/local/lib/node_modules
