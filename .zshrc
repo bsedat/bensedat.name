@@ -49,17 +49,6 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
-# AWS Command-Line Tools
-export AWS_CREDENTIAL_FILE="/Users/bsedat/.AWS-Credentials"
-export EC2_PRIVATE_KEY="$(/bin/ls $HOME/.ec2/pk-*.pem)"
-export EC2_CERT="$(/bin/ls $HOME/.ec2/cert-*.pem)"
-export EC2_HOME="/usr/local/Library/LinkedKegs/ec2-api-tools/jars"
-export AWS_ELB_HOME="/usr/local/Library/LinkedKegs/elb-tools/jars"
-export AWS_IAM_HOME="/usr/local/Library/LinkedKegs/aws-iam-tools/jars"
-export AWS_CLOUDWATCH_HOME="/usr/local/Library/LinkedKegs/cloud-watch/jars"
-export SERVICE_HOME="$AWS_CLOUDWATCH_HOME"
-export AWS_AUTO_SCALING_HOME="/usr/local/Cellar/auto-scaling/1.0.49.1/jars"
-# Export AWS Credentials to get AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY
 source $HOME/.AWS-Credentials-Export
 
 export NODE_PATH=/usr/local/lib/node_modules
