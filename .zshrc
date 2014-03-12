@@ -1,5 +1,5 @@
 # Customize to your needs...
-export PATH=~/bin:/usr/local/share/npm/bin:/usr/local/bin:$PATH
+export PATH=~/bin:/usr/local/share/npm/bin:/usr/local/bin:/usr/sbin:$PATH
 
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
