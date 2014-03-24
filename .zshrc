@@ -36,6 +36,7 @@ plugins=(
 	git-flow 
 	golang
 	heroku 
+	knife
 	node 
 	npm 
 	osx 
