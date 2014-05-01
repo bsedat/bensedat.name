@@ -13,5 +13,6 @@
 [alias]
 	wtf = !git-wtf
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	publish = !git push upstream $(git rev-parse --abbrev-ref HEAD):bsedat/$(git rev-parse --abbrev-ref HEAD) -u
 [color]
 	ui = auto
