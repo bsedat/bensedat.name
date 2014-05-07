@@ -7,7 +7,7 @@
 	excludesfile = /Users/bsedat/.gitignore_global
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path =
+	path = 
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
@@ -17,3 +17,6 @@
 	publish = !git push upstream $(git rev-parse --abbrev-ref HEAD):$(git config user.username)/$(git rev-parse --abbrev-ref HEAD)
 [color]
 	ui = auto
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
