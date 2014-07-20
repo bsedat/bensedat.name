@@ -1,14 +1,24 @@
 # Customize to your needs...
 export PATH=~/bin:/usr/local/share/npm/bin:/usr/local/bin:/usr/sbin:/sbin:$PATH
 
-# Path to your oh-my-zsh configuration.
-ZSH=$HOME/.oh-my-zsh
-
-# Set name of the theme to load.
-# Look in ~/.oh-my-zsh/themes/
-# Optionally, if you set this to "random", it'll load a random theme each
-# time that oh-my-zsh is loaded.
-ZSH_THEME="bsedat"
+source $HOME/.antigen/antigen/antigen.zsh
+antigen use oh-my-zsh
+antigen bundles <<EOBUNDLES
+	brew
+	gem
+	git
+	golang
+	heroku
+	knife
+	npm
+	osx
+	pip
+	rails
+	rake
+	rbenv
+EOBUNDLES
+antigen theme bsedat/zsh-theme bsedat
+antigen apply
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -25,31 +35,6 @@ ZSH_THEME="bsedat"
 # Uncomment following line if you want red dots to be displayed while waiting for completion
 COMPLETION_WAITING_DOTS="true"
 
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-# Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(
-	brew 
-	gem 
-	bsedat-git
-	git 
-	gitfast 
-	git-flow 
-	golang
-	heroku 
-	knife
-	node 
-	npm 
-	osx 
-	pip 
-	python 
-	rails 
-	rake 
-	rbenv
-	vagrant
-)
-
-source $ZSH/oh-my-zsh.sh
-
 export EDITOR=vim
 
 source $HOME/.AWS-Credentials-Export
@@ -60,5 +45,7 @@ export ANDROID_HOME=/usr/local/opt/android-sdk
 
 export DOCKER_HOST=tcp://
 
+# RBENV
+export RBENV_ROOT=/usr/local/var/rbenv
 eval "$(rbenv init -)"
 
