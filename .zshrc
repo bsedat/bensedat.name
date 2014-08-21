@@ -39,6 +39,7 @@ export EDITOR=vim
 
 source $HOME/.AWS-Credentials-Export
 
+export JAVA_HOME="$(/usr/libexec/java_home -v 1.7)"
 export NODE_PATH=/usr/local/lib/node_modules
 
 export DOCKER_HOST=tcp://
