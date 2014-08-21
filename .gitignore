@@ -1,8 +1,6 @@
 *
 !\.*
 .DS_Store
-*history
-.AWS-Credentials
 .AWS-Credentials-Export
 .CFUserTextEncoding
 .Xauthority
@@ -19,3 +17,5 @@
 .showoffrc
 .zcompdump*
 .ivy2/
+.*_history
+.atom
