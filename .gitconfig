@@ -14,9 +14,11 @@
 [alias]
 	wtf = !git-wtf
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-	publish = !git push upstream $(git rev-parse --abbrev-ref HEAD):$(git config user.username)/$(git rev-parse --abbrev-ref HEAD)
+	publish = !git push origin $(git rev-parse --abbrev-ref HEAD)
 [color]
 	ui = auto
 [filter "media"]
 	clean = git-media-clean %f
 	smudge = git-media-smudge %f
+[push]
+	default = simple
