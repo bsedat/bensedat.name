@@ -1,7 +1,8 @@
 *
 !\.*
 .DS_Store
-.AWS-Credentials-Export
+.aws-credentials-export
+.github-credentials-export
 .CFUserTextEncoding
 .Xauthority
 .dbshell
@@ -18,4 +19,5 @@
 .zcompdump*
 .ivy2/
 .*_history
+.*_hist
 .atom
