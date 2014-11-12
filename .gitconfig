@@ -2,7 +2,6 @@
 	name = Ben Sedat
 	username = bsedat
 	email = bsedat@tinfoilsecurity.com
-	signingkey = 3B22DAD2
 [core]
 	excludesfile = /Users/bsedat/.gitignore_global
 [difftool "sourcetree"]
