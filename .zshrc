@@ -1,10 +1,11 @@
 # Customize to your needs...
-export PATH=~/bin:/usr/local/share/npm/bin:/usr/local/bin:/usr/local/sbin:/usr/sbin:/sbin:$PATH
+export PATH=~/bin:/usr/local/bin:/usr/local/sbin:/usr/sbin:/sbin:$PATH
 
 source $HOME/.antigen/antigen/antigen.zsh
 antigen use oh-my-zsh
 antigen bundles <<EOBUNDLES
 	brew
+	bundler
 	gem
 	git
 	golang
