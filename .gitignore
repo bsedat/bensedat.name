@@ -21,3 +21,4 @@
 .*_history
 .*_hist
 .atom
+.dockercfg
