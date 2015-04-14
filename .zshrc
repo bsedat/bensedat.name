@@ -49,4 +49,4 @@ export DOCKER_HOST=tcp://
 # RBENV
 export RBENV_ROOT=/usr/local/var/rbenv
 eval "$(rbenv init -)"
-
+alias bi="bundle install --binstubs .bundle/bin --jobs 4 && rbenv rehash"
