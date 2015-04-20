@@ -45,9 +45,12 @@ source $HOME/.github-credentials-export
 export JAVA_HOME="$(/usr/libexec/java_home -v 1.7)"
 export NODE_PATH=/usr/local/lib/node_modules
 
+# Docker
 export DOCKER_HOST=tcp://192.168.59.103:2376
 export DOCKER_CERT_PATH=/Users/bsedat/.boot2docker/certs/boot2docker-vm
 export DOCKER_TLS_VERIFY=1
+alias dgci="docker rmi $(docker images -q -f dangling=true)"
+alias dgcc="docker rm $(docker ps -aq -f status=exited)"
 
 # RBENV
 export RBENV_ROOT=/usr/local/var/rbenv
