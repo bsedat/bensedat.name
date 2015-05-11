@@ -18,6 +18,7 @@ antigen bundles <<EOBUNDLES
 	rails
 	rake
 	rbenv
+	vagrant
 EOBUNDLES
 antigen theme bsedat/zsh-theme bsedat
 antigen apply
