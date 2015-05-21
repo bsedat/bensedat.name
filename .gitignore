@@ -1,8 +1,7 @@
 *
 !\.*
 .DS_Store
-.aws-credentials-export
-.github-credentials-export
+.*-credentials-export
 .CFUserTextEncoding
 .Xauthority
 .dbshell
@@ -23,3 +22,4 @@
 .atom
 .dockercfg
 .erlang.cookie
+.v8*

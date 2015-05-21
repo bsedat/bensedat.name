@@ -42,6 +42,7 @@ export EDITOR=vim
 
 source $HOME/.aws-credentials-export
 source $HOME/.github-credentials-export
+source $HOME/.hipchat-credentials-export
 
 export JAVA_HOME="$(/usr/libexec/java_home -v 1.7)"
 export NODE_PATH=/usr/local/lib/node_modules
