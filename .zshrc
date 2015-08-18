@@ -43,6 +43,7 @@ export EDITOR=vim
 source $HOME/.aws-credentials-export
 source $HOME/.github-credentials-export
 source $HOME/.hipchat-credentials-export
+source $HOME/.digitalocean-credentials-export
 
 export JAVA_HOME="$(/usr/libexec/java_home)"
 export NODE_PATH=/usr/local/lib/node_modules
