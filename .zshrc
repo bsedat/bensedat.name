@@ -1,27 +1,14 @@
 # Customize to your needs...
 export PATH=~/bin:/usr/local/bin:/usr/local/sbin:/usr/sbin:/sbin:$PATH
 
-source $HOME/.antigen/antigen/antigen.zsh
-antigen use oh-my-zsh
-antigen bundles <<EOBUNDLES
-	brew
-	bundler
-	docker
-	gem
-	git
-	golang
-	heroku
-	knife
-	npm
-	osx
-	pip
-	rails
-	rake
-	rbenv
-	vagrant
-EOBUNDLES
-antigen theme bsedat/zsh-theme bsedat
-antigen apply
+source "${HOME}/.zgen/zgen.zsh"
+if ! zgen saved; then
+    zgen oh-my-zsh
+    zgen load zsh-users/zsh-completions src
+    zgen load bsedat/zsh-theme bsedat.zsh-theme
+
+    zgen save
+fi
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
