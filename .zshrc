@@ -35,6 +35,8 @@ source $HOME/.digitalocean-credentials-export
 export JAVA_HOME="$(/usr/libexec/java_home)"
 export NODE_PATH=/usr/local/lib/node_modules
 
+alias gcm='git checkout master'
+
 # Docker
 alias dgci='docker rmi $(docker images -q -f dangling=true)'
 alias dgcc='docker rm $(docker ps -aq -f status=exited)'
