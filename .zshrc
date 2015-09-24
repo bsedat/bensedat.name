@@ -34,6 +34,8 @@ source $HOME/.digitalocean-credentials-export
 
 export JAVA_HOME="$(/usr/libexec/java_home)"
 export NODE_PATH=/usr/local/lib/node_modules
+export GOPATH=$HOME/go-workspace
+export PATH=$GOPATH/bin:$PATH
 
 alias gcm='git checkout master'
 
