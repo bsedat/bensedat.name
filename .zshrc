@@ -1,5 +1,5 @@
 # Customize to your needs...
-export PATH=~/bin:/usr/local/bin:/usr/local/sbin:/usr/sbin:/sbin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/sbin:/sbin:$PATH
 
 source "${HOME}/.zgen/zgen.zsh"
 if ! zgen saved; then
