@@ -1,6 +1,9 @@
 # Customize to your needs...
 export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/sbin:/sbin:$PATH
 
+# Disable Oh-My-Zsh Auto Update
+export DISABLE_AUTO_UPDATE=true
+
 source "${HOME}/.zgen/zgen.zsh"
 if ! zgen saved; then
     zgen oh-my-zsh
