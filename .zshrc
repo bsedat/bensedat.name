@@ -9,6 +9,7 @@ if ! zgen saved; then
     zgen oh-my-zsh
     zgen load zsh-users/zsh-completions src
     zgen load bsedat/zsh-theme bsedat.zsh-theme
+    zgen load bsedat/ec2-scripts src/ec2.sh
 
     zgen save
 fi
