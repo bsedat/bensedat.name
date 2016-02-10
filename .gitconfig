@@ -25,3 +25,7 @@
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
 	required = true
+[rebase]
+	autostash = true
+[stash]
+	showPatch = true
