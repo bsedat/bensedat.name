@@ -41,6 +41,7 @@ export GOPATH=$HOME/go-workspace
 export PATH=$GOPATH/bin:$PATH
 
 alias gcm='git checkout master'
+alias mixc='iex -S mix'
 
 # Docker
 alias dgci='docker rmi $(docker images -q -f dangling=true)'
