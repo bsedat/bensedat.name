@@ -31,10 +31,9 @@ COMPLETION_WAITING_DOTS="true"
 
 export EDITOR=vim
 
-source $HOME/.aws-credentials-export
-source $HOME/.github-credentials-export
-source $HOME/.hipchat-credentials-export
-source $HOME/.digitalocean-credentials-export
+for file in $HOME/.*-credentials-export; do
+    source "$file"
+done
 
 export JAVA_HOME="$(/usr/libexec/java_home)"
 export NODE_PATH=/usr/local/lib/node_modules
