@@ -31,9 +31,11 @@ COMPLETION_WAITING_DOTS="true"
 
 export EDITOR=vim
 
-for file in $HOME/.*-credentials-export; do
-    source "$file"
-done
+if (){ setopt localoptions nonomatch nocshnullglob; [ -f $HOME/.*-credentials-export([1]) ] }; then
+    for file in $HOME/.*-credentials-export; do
+        source "$file"
+    done
+fi
 
 export JAVA_HOME="$(/usr/libexec/java_home)"
 export NODE_PATH=/usr/local/lib/node_modules
