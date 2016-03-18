@@ -28,5 +28,6 @@
 	required = true
 [rebase]
 	autostash = true
+	autosquash = true
 [stash]
 	showPatch = true
