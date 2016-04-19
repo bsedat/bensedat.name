@@ -1,9 +1,6 @@
 # Customize to your needs...
 export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/sbin:/sbin:$PATH
 
-# Disable Oh-My-Zsh Auto Update
-export DISABLE_AUTO_UPDATE=true
-
 source "${HOME}/.zgen/zgen.zsh"
 if ! zgen saved; then
     zgen oh-my-zsh
@@ -17,8 +14,8 @@ fi
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
-# Comment this out to disable weekly auto-update checks
-# DISABLE_AUTO_UPDATE="true"
+# Uncomment following line if you want to disable weekly auto-update checks
+DISABLE_AUTO_UPDATE="true"
 
 # Uncomment following line if you want to disable colors in ls
 # DISABLE_LS_COLORS="true"
