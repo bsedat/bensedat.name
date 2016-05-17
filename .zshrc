@@ -1,16 +1,6 @@
 # Customize to your needs...
 export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/sbin:/sbin:$PATH
 
-source "${HOME}/.zgen/zgen.zsh"
-if ! zgen saved; then
-    zgen oh-my-zsh
-    zgen load zsh-users/zsh-completions src
-    zgen load bsedat/zsh-theme bsedat.zsh-theme
-    zgen load bsedat/ec2-scripts src/ec2.sh
-
-    zgen save
-fi
-
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
@@ -27,6 +17,16 @@ DISABLE_AUTO_UPDATE="true"
 COMPLETION_WAITING_DOTS="true"
 
 export EDITOR=vim
+
+source "${HOME}/.zgen/zgen.zsh"
+if ! zgen saved; then
+    zgen oh-my-zsh
+    zgen load zsh-users/zsh-completions src
+    zgen load bsedat/zsh-theme bsedat.zsh-theme
+    zgen load bsedat/ec2-scripts src/ec2.sh
+
+    zgen save
+fi
 
 if (){ setopt localoptions nonomatch nocshnullglob; [ -f $HOME/.*-credentials-export([1]) ] }; then
     for file in $HOME/.*-credentials-export; do
