@@ -33,3 +33,5 @@
 	showPatch = true
 [fetch]
 	prune = true
+[diff]
+	compactionHeuristic = true
