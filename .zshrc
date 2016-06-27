@@ -24,6 +24,7 @@ if ! zgen saved; then
     zgen load zsh-users/zsh-completions src
     zgen load bsedat/zsh-theme bsedat.zsh-theme
     zgen load bsedat/ec2-scripts src/ec2.sh
+    zgen load asdf-vm/asdf asdf.sh
     zgen load /usr/local/share/zsh/site-functions
     zgen save
 fi
@@ -44,7 +45,4 @@ alias mixc='iex -S mix'
 # Docker
 dmenv () { eval "$(docker-machine env $1)"; }
 
-# RBENV
-export RBENV_ROOT=/usr/local/var/rbenv
-eval "$(rbenv init -)"
 alias bi="bundle install --binstubs .bundle/bin --jobs 4 && rbenv rehash"
