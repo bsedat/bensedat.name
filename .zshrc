@@ -45,4 +45,4 @@ alias mixc='iex -S mix'
 # Docker
 dmenv () { eval "$(docker-machine env $1)"; }
 
-alias bi="bundle install --binstubs .bundle/bin --jobs 4 && rbenv rehash"
+alias bi="bundle install --binstubs .bundle/bin --path .bundle/vendor --jobs 4"
