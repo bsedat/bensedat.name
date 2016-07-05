@@ -38,6 +38,8 @@ fi
 export GOPATH=$HOME/go-workspace
 export PATH=$GOPATH/bin:$PATH
 
+export JAVA_HOME=$(/usr/libexec/java_home)
+
 alias gcm='git checkout master'
 alias mixc='iex -S mix'
 
