@@ -29,6 +29,8 @@ if ! zgen saved; then
     zgen save
 fi
 
+source "${HOME}/.zgen/asdf-vm/asdf-master/completions/asdf.bash"
+
 if (){ setopt localoptions nonomatch nocshnullglob; [ -f $HOME/.*-credentials-export([1]) ] }; then
     for file in $HOME/.*-credentials-export; do
         source "$file"
