@@ -1,6 +1,3 @@
-# Customize to your needs...
-export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/sbin:/sbin:$PATH
-
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
@@ -30,6 +27,8 @@ if ! zgen saved; then
 fi
 
 source "${HOME}/.zgen/asdf-vm/asdf-master/completions/asdf.bash"
+
+export PATH=./bin:./.bundle/bin:$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/sbin:/sbin:$PATH
 
 if (){ setopt localoptions nonomatch nocshnullglob; [ -f $HOME/.*-credentials-export([1]) ] }; then
     for file in $HOME/.*-credentials-export; do
