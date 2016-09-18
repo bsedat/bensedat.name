@@ -48,8 +48,8 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 alias gcm='git checkout master'
 alias mixc='iex -S mix'
 alias be='bundle exec'
+alias bi="bundle install --binstubs .bundle/bin --path .bundle/vendor --jobs 4"
 
 # Docker
 dmenv () { eval "$(docker-machine env $1)"; }
 
-alias bi="bundle install --binstubs .bundle/bin --path .bundle/vendor --jobs 4"
