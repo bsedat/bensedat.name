@@ -28,6 +28,10 @@ fi
 
 source "${HOME}/.zgen/asdf-vm/asdf-master/completions/asdf.bash"
 
+if [ -f "$(which direnv)" ]; then
+    eval "$(direnv hook zsh)"
+fi
+
 export PATH=./bin:./.bundle/bin:$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/sbin:/sbin:$PATH
 
 if (){ setopt localoptions nonomatch nocshnullglob; [ -f $HOME/.*-credentials-export([1]) ] }; then
