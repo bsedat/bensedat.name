@@ -1,5 +1,6 @@
 *
 !\.*
+!.bundle/config
 .DS_Store
 .*-credentials-export
 .CFUserTextEncoding
