@@ -15,6 +15,8 @@ COMPLETION_WAITING_DOTS="true"
 
 export EDITOR=vim
 
+export PATH=./bin:./.bundle/bin:$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/sbin:/sbin:$PATH
+
 source "${HOME}/.zgen/zgen.zsh"
 if ! zgen saved; then
     zgen oh-my-zsh
@@ -32,8 +34,6 @@ if [ -f "$(which direnv)" ]; then
     eval "$(direnv hook zsh)"
 fi
 
-export PATH=./bin:./.bundle/bin:$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/sbin:/sbin:$PATH
-
 if (){ setopt localoptions nonomatch nocshnullglob; [ -f $HOME/.*-credentials-export([1]) ] }; then
     for file in $HOME/.*-credentials-export; do
         source "$file"
@@ -44,6 +44,9 @@ export GOPATH=$HOME/go-workspace
 export PATH=$GOPATH/bin:$PATH
 
 export JAVA_HOME=$(/usr/libexec/java_home)
+
+# Fix NPM to be able to use asdf stubs
+export NPM_CONFIG_PREFIX=/usr/local
 
 alias gcm='git checkout master'
 alias mixc='iex -S mix'
