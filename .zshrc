@@ -15,7 +15,7 @@ COMPLETION_WAITING_DOTS="true"
 
 export EDITOR=vim
 
-export PATH=./bin:./.bundle/bin:$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/sbin:/sbin:$PATH
+export PATH=./bin:./.bundle/bin:$HOME/bin:$HOME/.yarn/bin:/usr/local/bin:/usr/local/sbin:/usr/sbin:/sbin:$PATH
 
 source "${HOME}/.zgen/zgen.zsh"
 if ! zgen saved; then
