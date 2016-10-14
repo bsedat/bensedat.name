@@ -47,6 +47,9 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 
 # Fix NPM to be able to use asdf stubs
 export NPM_CONFIG_PREFIX=/usr/local
+if [ ! -f /usr/local/lib/node_modules/etc/package.json ]; then
+    ln -s /usr/local/lib/node_modules/npm/package.json /usr/local/lib/node_modules/etc/package.json
+fi
 
 alias gcm='git checkout master'
 alias mixc='iex -S mix'
