@@ -29,3 +29,4 @@
 .flyrc
 .dialyxir*
 .tool-versions-e
+.yarn/
