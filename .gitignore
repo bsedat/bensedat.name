@@ -28,3 +28,4 @@
 .zgen/
 .flyrc
 .dialyxir*
+.tool-versions-e
