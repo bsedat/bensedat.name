@@ -1,6 +1,7 @@
 *
 !\.*
 !.bundle/config
+!Brewfile
 .DS_Store
 .*-credentials-export
 .CFUserTextEncoding
