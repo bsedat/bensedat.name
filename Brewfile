@@ -105,4 +105,3 @@ mas 'LastPass', id: 926036361
 mas 'Kiwi for Gmail Lite', id: 1006184923
 mas 'Microsoft Remote Desktop', id: 715768417
 mas 'The Unarchiver', id: 425424353
-mas 'Caffeine', id: 411246225
