@@ -3,6 +3,7 @@
 !.bundle/config
 !Brewfile
 !.aws/config
+!.hotel/conf.json
 .DS_Store
 .*-credentials-export
 .CFUserTextEncoding
