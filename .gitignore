@@ -33,3 +33,4 @@
 .dialyxir*
 .tool-versions-e
 .yarn/
+.yarnrc
