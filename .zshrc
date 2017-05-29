@@ -30,7 +30,8 @@ if [ -d $ZPLUG_HOME ]; then
     zplug "sorin-ionescu/prezto"
     zplug "modules/utility", from:prezto
     zstyle ':prezto:module:utility:ls' color 'yes'
-
+    zplug "modules/history", from:prezto
+    
     zplug load
 fi
 
