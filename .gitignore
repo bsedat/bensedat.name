@@ -22,6 +22,7 @@
 .zcompdump*
 .ivy2/
 .*_history
+.zhistory
 .*_hist
 .atom
 .dockercfg
