@@ -15,7 +15,7 @@ export EDITOR=vim
 export PATH=$HOME/bin:$HOME/.yarn/bin:/usr/local/bin:/usr/local/sbin:/usr/sbin:/sbin:$PATH
 
 export ZPLUG_HOME=/usr/local/opt/zplug
-if [ -d $ZPLUG_HOME ]; then
+if [ -d "$ZPLUG_HOME" ]; then
     source $ZPLUG_HOME/init.zsh
 
     zplug "zsh-users/zsh-history-substring-search"
