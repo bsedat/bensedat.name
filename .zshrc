@@ -17,20 +17,23 @@ export EDITOR=vim
 
 export PATH=$HOME/bin:$HOME/.yarn/bin:/usr/local/bin:/usr/local/sbin:/usr/sbin:/sbin:$PATH
 
-source "${HOME}/.zgen/zgen.zsh"
-if ! zgen saved; then
-    zgen oh-my-zsh
-    zgen load bsedat/zsh-completions src
-    zgen load bsedat/zsh-theme bsedat.zsh-theme
-    zgen load bsedat/ec2-scripts src/ec2.sh
-    zgen load asdf-vm/asdf asdf.sh
-    zgen load /usr/local/share/zsh/site-functions
-    zgen save
+export ZPLUG_HOME=/usr/local/opt/zplug
+if [ -d $ZPLUG_HOME ]; then
+    source $ZPLUG_HOME/init.zsh
+
+    zplug "zsh-users/zsh-history-substring-search"
+    zplug "zsh-users/zsh-autosuggestions"
+    zplug "zsh-users/zsh-syntax-highlighting", defer:2
+    zplug "zsh-users/zsh-completions"
+    zplug 'dracula/zsh', as:theme
+    zplug "bsedat/ec2-scripts", as:command, use:"bin/(*)"
+    zplug "asdf-vm/asdf", at:"v0.3.0", use:"{asdf.sh,completions/asdf.bash}"
+    zplug "/usr/local/share/zsh/site-functions", from:local
+
+    zplug load
 fi
 
 export PATH=./bin:./.bundle/bin:$PATH
-
-source "${HOME}/.zgen/asdf-vm/asdf-master/completions/asdf.bash"
 
 if [ -f "$(which direnv)" ]; then
     eval "$(direnv hook zsh)"
@@ -53,4 +56,3 @@ export NPM_CONFIG_PREFIX=/usr/local
 alias gcm='git checkout master'
 alias mixc='iex -S mix'
 alias be='bundle exec'
-
