@@ -1,9 +1,6 @@
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
-# Uncomment following line if you want to disable weekly auto-update checks
-DISABLE_AUTO_UPDATE="true"
-
 # Uncomment following line if you want to disable colors in ls
 # DISABLE_LS_COLORS="true"
 
@@ -29,6 +26,10 @@ if [ -d $ZPLUG_HOME ]; then
     zplug "bsedat/ec2-scripts", as:command, use:"bin/(*)"
     zplug "asdf-vm/asdf", at:"v0.3.0", use:"{asdf.sh,completions/asdf.bash}"
     zplug "/usr/local/share/zsh/site-functions", from:local
+
+    zplug "sorin-ionescu/prezto"
+    zplug "modules/utility", from:prezto
+    zstyle ':prezto:module:utility:ls' color 'yes'
 
     zplug load
 fi
