@@ -33,6 +33,7 @@ if [ -d "$ZPLUG_HOME" ]; then
     zplug "modules/history", from:prezto
     zplug "modules/terminal", from:prezto
     zstyle ':prezto:module:terminal' auto-title 'yes'
+    zplug "modules/editor", from:prezto
 
     if ! zplug check --verbose; then
         printf "Install? [y/N]: "
