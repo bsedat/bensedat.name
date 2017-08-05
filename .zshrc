@@ -22,7 +22,8 @@ if [ -d "$ZPLUG_HOME" ]; then
     zplug "zsh-users/zsh-autosuggestions"
     zplug "zsh-users/zsh-syntax-highlighting", defer:2
     zplug "zsh-users/zsh-completions"
-    zplug 'dracula/zsh', as:theme
+    zplug denysdovhan/spaceship-zsh-theme, use:spaceship.zsh, from:github, as:theme
+    # zplug 'dracula/zsh', as:theme
     zplug "bsedat/ec2-scripts", as:command, use:"bin/(*)"
     zplug "asdf-vm/asdf", at:"v0.3.0", use:"{asdf.sh,completions/asdf.bash}"
     zplug "/usr/local/share/zsh/site-functions", from:local
@@ -44,6 +45,10 @@ if [ -d "$ZPLUG_HOME" ]; then
     
     zplug load
 fi
+
+# Spaceship theme config
+export SPACESHIP_PACKAGE_SHOW=false
+export SPACESHIP_DOCKER_SHOW=false
 
 export PATH=./bin:./.bundle/bin:$PATH
 
