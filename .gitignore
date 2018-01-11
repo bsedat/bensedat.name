@@ -35,3 +35,5 @@
 .tool-versions-e
 .yarn/
 .yarnrc
+.gnupg/.gpg-v21-migrated
+.docker/.buildNodeID
