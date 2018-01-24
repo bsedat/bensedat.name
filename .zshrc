@@ -44,6 +44,8 @@ if [ -d "$ZPLUG_HOME" ]; then
     zplug load
 fi
 
+export HOMEBREW_NO_AUTO_UPDATE=1
+
 # asdf
 source /usr/local/opt/asdf/asdf.sh
 source /usr/local/opt/asdf/etc/bash_completion.d/asdf.bash
