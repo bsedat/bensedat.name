@@ -76,6 +76,8 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 # Fix NPM to be able to use asdf stubs
 export NPM_CONFIG_PREFIX=/usr/local
 
+export COREOS_CHANNEL=stable
+
 alias gcm='git checkout master'
 alias mixc='iex -S mix'
 alias be='bundle exec'
