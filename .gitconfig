@@ -2,6 +2,7 @@
 	name = Ben Sedat
 	username = bsedat
 	email = bsedat@tinfoilsecurity.com
+	signingkey = C8FF2591140CAE47
 [core]
 	excludesfile = /Users/bsedat/.gitignore_global
 	ignorecase = false
@@ -39,6 +40,7 @@
 	compactionHeuristic = true
 [commit]
 	verbose = true
+	gpgsign = true
 [status]
 	showUntrackedFiles = all
 [credential]
