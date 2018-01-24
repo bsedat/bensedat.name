@@ -53,6 +53,8 @@ source /usr/local/opt/asdf/etc/bash_completion.d/asdf.bash
 # Spaceship theme config
 export SPACESHIP_PACKAGE_SHOW=false
 export SPACESHIP_DOCKER_SHOW=false
+export SPACESHIP_BATTERY_SHOW=false
+export SPACESHIP_KUBECONTEXT_SHOW=false
 
 export PATH=./bin:./.bundle/bin:$PATH
 
