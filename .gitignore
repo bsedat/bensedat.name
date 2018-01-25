@@ -37,3 +37,4 @@
 .yarnrc
 .gnupg/.gpg-v21-migrated
 .docker/.buildNodeID
+.uuid
