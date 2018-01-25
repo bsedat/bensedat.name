@@ -78,6 +78,8 @@ export NPM_CONFIG_PREFIX=/usr/local
 
 export COREOS_CHANNEL=stable
 
+export ERL_AFLAGS="-kernel shell_history enabled"
+
 alias gcm='git checkout master'
 alias mixc='iex -S mix'
 alias be='bundle exec'
