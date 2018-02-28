@@ -76,8 +76,6 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 # Fix NPM to be able to use asdf stubs
 export NPM_CONFIG_PREFIX=/usr/local
 
-export COREOS_CHANNEL=stable
-
 export ERL_AFLAGS="-kernel shell_history enabled"
 
 alias gcm='git checkout master'
