@@ -22,7 +22,7 @@ if [ -d "$ZPLUG_HOME" ]; then
     zplug "zsh-users/zsh-autosuggestions"
     zplug "zsh-users/zsh-syntax-highlighting", defer:2
     zplug "zsh-users/zsh-completions"
-    zplug denysdovhan/spaceship-zsh-theme, use:spaceship.zsh, from:github, as:theme
+    zplug "denysdovhan/spaceship-zsh-theme", use:spaceship.zsh, from:github, as:theme
     zplug "bsedat/ec2-scripts", as:command, use:"bin/(*)"
     zplug "/usr/local/share/zsh/site-functions", from:local
 
