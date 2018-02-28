@@ -78,6 +78,8 @@ export NPM_CONFIG_PREFIX=/usr/local
 
 export ERL_AFLAGS="-kernel shell_history enabled"
 
+export VAGRANT_DEFAULT_PROVIDER=virtualbox
+
 alias gcm='git checkout master'
 alias mixc='iex -S mix'
 alias be='bundle exec'
