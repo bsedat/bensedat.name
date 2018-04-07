@@ -83,3 +83,5 @@ export VAGRANT_DEFAULT_PROVIDER=virtualbox
 alias gcm='git checkout master'
 alias mixc='iex -S mix'
 alias be='bundle exec'
+alias foreman='noglob foreman'
+alias rspec='noglob rspec'
