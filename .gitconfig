@@ -7,7 +7,6 @@
 	excludesfile = /Users/bsedat/.gitignore_global
 	ignorecase = false
 [alias]
-	wtf = !git-wtf
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 	publish = !git push origin $(git rev-parse --abbrev-ref HEAD):$(whoami)/$(git rev-parse --abbrev-ref HEAD) -u
 	cleanup-local = !git branch --merged | grep -v '*' | xargs -n 1 git branch -d
