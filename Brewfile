@@ -1,4 +1,5 @@
 tap "atlassian/tap"
+tap "bsedat/tap"
 tap "go-delve/delve"
 tap "heroku/brew"
 tap "homebrew/bundle"
