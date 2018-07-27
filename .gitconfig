@@ -45,3 +45,5 @@
 	showUntrackedFiles = all
 [credential]
 	helper = osxkeychain
+[submodule]
+	recurse = true
