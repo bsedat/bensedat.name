@@ -47,3 +47,5 @@
 	helper = osxkeychain
 [submodule]
 	recurse = true
+[merge]
+	ff = only
