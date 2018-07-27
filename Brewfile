@@ -65,6 +65,7 @@ brew "nuget"
 brew "phantomjs"
 brew "pkg-config"
 brew "postgresql@9.4", restart_service: true, link: true
+brew "postgresql", link: false
 brew "postgresql@9.5"
 brew "putty"
 brew "rancher-compose"
