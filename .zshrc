@@ -49,6 +49,13 @@ export HOMEBREW_NO_AUTO_UPDATE=1
 # asdf
 source /usr/local/opt/asdf/asdf.sh
 source /usr/local/opt/asdf/etc/bash_completion.d/asdf.bash
+if [[ ! -a ~/.asdf/installs ]]; then
+  mkdir -p ~/.asdf/{installs,plugins,shims}
+fi
+# ASDF gets wiped out on each update
+if [[ ! -a $ASDF_DIR/installs ]]; then
+  ln -s ~/.asdf/* $ASDF_DIR
+fi
 
 # Spaceship theme config
 export SPACESHIP_PACKAGE_SHOW=false
