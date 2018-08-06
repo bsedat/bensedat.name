@@ -75,7 +75,6 @@ if (){ setopt localoptions nonomatch nocshnullglob; [ -f $HOME/.*-credentials-ex
     done
 fi
 
-export GOPATH=$HOME/go-workspace
 export PATH=$GOPATH/bin:$PATH
 
 export JAVA_HOME=$(/usr/libexec/java_home)
