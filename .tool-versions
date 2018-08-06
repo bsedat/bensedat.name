@@ -1,2 +1,4 @@
 ruby path:/usr
 nodejs path:/usr/local
+elixir path:/usr/local
+erlang path:/usr/local
